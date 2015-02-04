@@ -43,7 +43,7 @@ class Article
 
 	private function getContent( ) 
 	{
-		$out =  "<div class=\"article-content\"><p class=\"content-paragraph\">" . get_the_content( "<a href=\"" . get_permalink() . "\"> ...Read more</a>" ) . "</p></div>";
+		$out =  "<div class=\"article-content\"><p class=\"content-paragraph\">" . get_the_content( ) . "</p></div>";
 
 		return $out;
 	}
