@@ -1,0 +1,22 @@
+{
+	"github" : {
+		  "category-name" : "github"
+		, "fa-icon" : "fa-github"
+		, "size" : "lg"
+	},
+	"javascript" : {
+		  "category-name" : "javascript"
+		, "text" : "{js}"
+		, "font-size" : "20px"
+	},
+	"php" : {
+		  "category-name" : "php"
+		, "text" : "{php}"
+		, "font-size" : "20px"
+	},
+	"csharp" : {
+		  "category-name" : "c#"
+		, "text" : "{csharp}"
+		, "font-size" : "20px"
+	}
+}

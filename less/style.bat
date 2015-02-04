@@ -1,0 +1,1 @@
+lessc "style.less" "style.min.css" --clean-css

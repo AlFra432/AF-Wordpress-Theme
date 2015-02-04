@@ -1,0 +1,95 @@
+/*
+* GENERAL
+*/
+body{
+	font-size:@font-size; 
+	.antialiased-font();
+	font-family: @font-family;
+	color:@color;
+	background-color:@background-color;
+}
+
+input, select, option{
+	background-color:@input-background-color;
+	color:@input-color;
+	border:1px solid @input-border-color;
+	&::-webkit-input-placeholder {color:@input-color;}
+	&:-moz-placeholder {color:@input-color;}
+	&::-moz-placeholder {color:@input-color;}
+	&:-ms-input-placeholder {color:@input-color;}
+	.border-radius(@border-radius);
+}
+
+a{
+	text-decoration:none;
+	color:@link-color;
+	background-color:@link-background-color;
+	cursor:pointer;
+	font-size:@link-font-size;
+	&:hover{
+		text-decoration:underline;
+		color:@link-hover-color;
+		background-color: @link-hover-background-color;
+	}
+	&>i{
+		text-decoration:none;
+		&:hover{
+			text-decoration:none;
+		}
+	}
+}
+
+ol,ul{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+
+img {
+	border-style:none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: @heading-font-family;
+	font-weight: @heading-font-family-weight;
+	-webkit-font-smoothing: antialiased;
+	color:@heading-color;
+	background-color: @heading-background-color;
+	margin:0px;
+	a{
+		&:hover{
+			text-decoration:none;
+		}
+	}
+}
+
+button {
+	color: @button-color;
+	background-color: @button-background-color;
+	border-radius: @button-border-radius;
+	border: 1px solid @button-border-color;
+}
+
+*:focus{
+	outline:0;
+}
+
+.selection-color( @selection-color, @selection-background-color, "*" );
+.selection-color( @link-selection-color, @selection-background-color, "a" );
+
+.selection-color( @color, @bg-color: #fff, @elem ){
+
+	@el : ~"@{elem}";
+	@{el}::-moz-selection{
+		color:@color;
+		background-color:@bg-color;
+	}
+	@{el}::selection{
+		color:@color;
+		background-color:@bg-color;
+	}
+}
+
+/*
+* END GENERAL
+*/

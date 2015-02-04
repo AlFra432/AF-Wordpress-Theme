@@ -1,0 +1,12 @@
+{
+  "name": "AFBlog",
+  "description": "Necessary modules for blog.aleksanderfras.com wordpress theme",
+  "author": "Aleksander Fras <fras.aleksander@gmail.com>",
+  "dependencies": {
+  	"jquery" : "1.x.x",
+    "requirejs": "2.x.x",
+    "font-awesome": "4.x.x",
+    "velocity-animate": "1.x.x"
+  },
+  "engine": "node >= 0.4.1"
+}
