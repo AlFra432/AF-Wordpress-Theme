@@ -43,14 +43,16 @@ class Article
 
 	private function getContent( ) 
 	{
-		$out =  "<div class=\"article-content\"><p class=\"content-paragraph\">" . get_the_content( ) . "</p></div>";
+		$content = apply_filters( 'the_content', get_the_content() );
+		$content = str_replace( ']]>', ']]&gt;', $content );
+		$out =  "<div class=\"article-content\">" . $content . "</div>";
 
 		return $out;
 	}
 
 	public static function getExcerpt( )
 	{
-		$out = "<div class=\"article-excerpt\"><p class=\"content-paragraph\">" . get_the_excerpt() . "</p></div>";
+		$out = "<div class=\"article-excerpt\">" . get_the_excerpt() . "</div>";
 		
 		return $out;
 	}

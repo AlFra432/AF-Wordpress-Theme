@@ -107,6 +107,14 @@ html{
 			margin-bottom:22px;
 		}
 
+		.article-content{
+			&>p{
+				margin-bottom: 0px !important;
+				margin-top: 0px !important;
+			}
+			line-height: 1.625;
+		}
+
 		.header-table, .article-table, .footer-table{
 			width:100%;
 			height:10px;
@@ -260,6 +268,10 @@ html{
 
 		.table-content{
 			text-align: justify;
+			.article-col-middle{
+				padding-left:0px !important;
+				padding-right: 0px !important;
+			}
 		}
 
 		.table-excerpt{
@@ -269,7 +281,7 @@ html{
 			}
 			.article-col-middle{
 				padding-top: 8px;
-				text-align: justify;
+				text-align: left;
 			}
 
 			.icon-read-more{
